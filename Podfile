@@ -6,6 +6,6 @@ target 'swiftVideoPlayer' do
   use_frameworks!
 
   # Pods for swiftVideoPlayer
- pod "YouTube-Player-iOS-Helper", "~> 0.1"
+pod 'YouTubePlayer'
 
 end
