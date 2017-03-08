@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		536E6422D1C9A6B6D01E18FD /* Pods_swiftVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DAC00C3BA664879738DBB5 /* Pods_swiftVideoPlayer.framework */; };
 		B31D45471E6F15CB00106CC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D45461E6F15CB00106CC2 /* AppDelegate.swift */; };
-		B31D45491E6F15CB00106CC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D45481E6F15CB00106CC2 /* ViewController.swift */; };
 		B31D454C1E6F15CB00106CC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D454A1E6F15CB00106CC2 /* Main.storyboard */; };
 		B31D454E1E6F15CB00106CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D454D1E6F15CB00106CC2 /* Assets.xcassets */; };
 		B31D45511E6F15CB00106CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31D454F1E6F15CB00106CC2 /* LaunchScreen.storyboard */; };
+		B3E00B6B1E705F7C0064E127 /* LocalVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6A1E705F7C0064E127 /* LocalVideoVC.swift */; };
+		B3E00B6D1E705FA50064E127 /* OnlineVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */; };
+		B3E00B6F1E705FC30064E127 /* OthersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6E1E705FC30064E127 /* OthersVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		89DAC00C3BA664879738DBB5 /* Pods_swiftVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D45431E6F15CB00106CC2 /* swiftVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31D45461E6F15CB00106CC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B31D45481E6F15CB00106CC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B31D454B1E6F15CB00106CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B31D454D1E6F15CB00106CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31D45501E6F15CB00106CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31D45521E6F15CB00106CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E00B6A1E705F7C0064E127 /* LocalVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalVideoVC.swift; path = Controllers/LocalVideoVC.swift; sourceTree = "<group>"; };
+		B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineVideoVC.swift; path = Controllers/OnlineVideoVC.swift; sourceTree = "<group>"; };
+		B3E00B6E1E705FC30064E127 /* OthersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OthersVC.swift; path = Controllers/OthersVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +73,24 @@
 		B31D45451E6F15CB00106CC2 /* swiftVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B3E00B691E705F010064E127 /* Controllers */,
 				B31D45461E6F15CB00106CC2 /* AppDelegate.swift */,
-				B31D45481E6F15CB00106CC2 /* ViewController.swift */,
 				B31D454A1E6F15CB00106CC2 /* Main.storyboard */,
 				B31D454D1E6F15CB00106CC2 /* Assets.xcassets */,
 				B31D454F1E6F15CB00106CC2 /* LaunchScreen.storyboard */,
 				B31D45521E6F15CB00106CC2 /* Info.plist */,
 			);
 			path = swiftVideoPlayer;
+			sourceTree = "<group>";
+		};
+		B3E00B691E705F010064E127 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3E00B6A1E705F7C0064E127 /* LocalVideoVC.swift */,
+				B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */,
+				B3E00B6E1E705FC30064E127 /* OthersVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		CA600EAEB0B9FED25570EA4A /* Pods */ = {
@@ -211,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B31D45491E6F15CB00106CC2 /* ViewController.swift in Sources */,
+				B3E00B6D1E705FA50064E127 /* OnlineVideoVC.swift in Sources */,
+				B3E00B6B1E705F7C0064E127 /* LocalVideoVC.swift in Sources */,
 				B31D45471E6F15CB00106CC2 /* AppDelegate.swift in Sources */,
+				B3E00B6F1E705FC30064E127 /* OthersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
