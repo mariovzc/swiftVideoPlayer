@@ -16,6 +16,8 @@
 		B3E00B6D1E705FA50064E127 /* OnlineVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */; };
 		B3E00B6F1E705FC30064E127 /* OthersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6E1E705FC30064E127 /* OthersVC.swift */; };
 		B3E00B741E706BB00064E127 /* videos in Resources */ = {isa = PBXBuildFile; fileRef = B3E00B731E706BB00064E127 /* videos */; };
+		B3E00B771E706D4F0064E127 /* LocalVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B751E706D4F0064E127 /* LocalVideoTableViewCell.swift */; };
+		B3E00B781E706D4F0064E127 /* LocalVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E00B761E706D4F0064E127 /* LocalVideoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineVideoVC.swift; path = Controllers/OnlineVideoVC.swift; sourceTree = "<group>"; };
 		B3E00B6E1E705FC30064E127 /* OthersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OthersVC.swift; path = Controllers/OthersVC.swift; sourceTree = "<group>"; };
 		B3E00B731E706BB00064E127 /* videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = videos; sourceTree = "<group>"; };
+		B3E00B751E706D4F0064E127 /* LocalVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalVideoTableViewCell.swift; path = OtherViews/LocalVideoTableViewCell.swift; sourceTree = "<group>"; };
+		B3E00B761E706D4F0064E127 /* LocalVideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocalVideoTableViewCell.xib; path = OtherViews/LocalVideoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				B31D454D1E6F15CB00106CC2 /* Assets.xcassets */,
 				B31D454F1E6F15CB00106CC2 /* LaunchScreen.storyboard */,
 				B31D45521E6F15CB00106CC2 /* Info.plist */,
+				B3E00B761E706D4F0064E127 /* LocalVideoTableViewCell.xib */,
 			);
 			path = swiftVideoPlayer;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 		B3E00B691E705F010064E127 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B3E00B751E706D4F0064E127 /* LocalVideoTableViewCell.swift */,
 				B3E00B6A1E705F7C0064E127 /* LocalVideoVC.swift */,
 				B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */,
 				B3E00B6E1E705FC30064E127 /* OthersVC.swift */,
@@ -176,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E00B741E706BB00064E127 /* videos in Resources */,
+				B3E00B781E706D4F0064E127 /* LocalVideoTableViewCell.xib in Resources */,
 				B31D45511E6F15CB00106CC2 /* LaunchScreen.storyboard in Resources */,
 				B31D454E1E6F15CB00106CC2 /* Assets.xcassets in Resources */,
 				B31D454C1E6F15CB00106CC2 /* Main.storyboard in Resources */,
@@ -239,6 +246,7 @@
 			files = (
 				B3E00B6D1E705FA50064E127 /* OnlineVideoVC.swift in Sources */,
 				B3E00B6B1E705F7C0064E127 /* LocalVideoVC.swift in Sources */,
+				B3E00B771E706D4F0064E127 /* LocalVideoTableViewCell.swift in Sources */,
 				B31D45471E6F15CB00106CC2 /* AppDelegate.swift in Sources */,
 				B3E00B6F1E705FC30064E127 /* OthersVC.swift in Sources */,
 			);
