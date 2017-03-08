@@ -13,6 +13,8 @@ class LocalVideoTableViewCell: UITableViewCell {
     @IBOutlet weak var backGroundImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    let heigthCell:CGFloat = 220;
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

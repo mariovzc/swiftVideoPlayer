@@ -12,6 +12,7 @@ import AVFoundation
 
 class LocalVideoVC: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     var data = [
         
         ["image": "dogge1", "title": "Dogge", "time": "00:13", "video": "01"],
@@ -22,10 +23,11 @@ class LocalVideoVC: UIViewController {
         ["image": "dogge1", "title": "Dogge", "time": "00:13", "video": "01"],
         
     ]
-    
+    let cellIdentifier = "cell"
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        registerCellInTable()
         // Do any additional setup after loading the view.
     }
 
@@ -34,15 +36,47 @@ class LocalVideoVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+extension LocalVideoVC{
+    
+    func registerCellInTable() {
+        let nib:UINib = UINib(nibName: "LocalVideoTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
     }
-    */
 
+}
+
+extension LocalVideoVC: UITableViewDataSource{
+    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+        let cell = LocalVideoTableViewCell()
+        return cell.heigthCell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! LocalVideoTableViewCell
+        
+        
+        let d = data[indexPath.row]
+        cell.titleLabel.text = d["title"]
+        cell.durationLabel.text = d["time"]
+        cell.backGroundImage.image = UIImage(named: d["image"]!)
+        return cell
+    }
+
+    
+}
+extension LocalVideoVC: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }
