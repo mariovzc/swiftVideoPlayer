@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class LocalVideoVC: UIViewController {
-
+    
+    var data = [
+        
+        ["image": "dogge1", "title": "Dogge", "time": "00:13", "video": "01"],
+        ["image": "dogge2", "title": "Dogge", "time": "00:13", "video": "02"],
+        ["image": "dogge3", "title": "Dogge", "time": "00:13", "video": "03"],
+        ["image": "dogge2", "title": "Dogge", "time": "00:13", "video": "03"],
+        ["image": "dogge3", "title": "Dogge", "time": "00:13", "video": "02"],
+        ["image": "dogge1", "title": "Dogge", "time": "00:13", "video": "01"],
+        
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

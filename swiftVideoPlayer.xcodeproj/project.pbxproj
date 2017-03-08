@@ -15,6 +15,7 @@
 		B3E00B6B1E705F7C0064E127 /* LocalVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6A1E705F7C0064E127 /* LocalVideoVC.swift */; };
 		B3E00B6D1E705FA50064E127 /* OnlineVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */; };
 		B3E00B6F1E705FC30064E127 /* OthersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E00B6E1E705FC30064E127 /* OthersVC.swift */; };
+		B3E00B741E706BB00064E127 /* videos in Resources */ = {isa = PBXBuildFile; fileRef = B3E00B731E706BB00064E127 /* videos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B3E00B6A1E705F7C0064E127 /* LocalVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalVideoVC.swift; path = Controllers/LocalVideoVC.swift; sourceTree = "<group>"; };
 		B3E00B6C1E705FA50064E127 /* OnlineVideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineVideoVC.swift; path = Controllers/OnlineVideoVC.swift; sourceTree = "<group>"; };
 		B3E00B6E1E705FC30064E127 /* OthersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OthersVC.swift; path = Controllers/OthersVC.swift; sourceTree = "<group>"; };
+		B3E00B731E706BB00064E127 /* videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = videos; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,8 @@
 		B31D45451E6F15CB00106CC2 /* swiftVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B3E00B731E706BB00064E127 /* videos */,
+				B3E00B701E70646C0064E127 /* Helpers */,
 				B3E00B691E705F010064E127 /* Controllers */,
 				B31D45461E6F15CB00106CC2 /* AppDelegate.swift */,
 				B31D454A1E6F15CB00106CC2 /* Main.storyboard */,
@@ -91,6 +95,13 @@
 				B3E00B6E1E705FC30064E127 /* OthersVC.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B3E00B701E70646C0064E127 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		CA600EAEB0B9FED25570EA4A /* Pods */ = {
@@ -164,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E00B741E706BB00064E127 /* videos in Resources */,
 				B31D45511E6F15CB00106CC2 /* LaunchScreen.storyboard in Resources */,
 				B31D454E1E6F15CB00106CC2 /* Assets.xcassets in Resources */,
 				B31D454C1E6F15CB00106CC2 /* Main.storyboard in Resources */,
