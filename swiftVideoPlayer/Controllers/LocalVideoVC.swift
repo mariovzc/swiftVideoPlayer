@@ -23,6 +23,10 @@ class LocalVideoVC: UIViewController {
         ["image": "dogge1", "title": "Dogge", "time": "00:13", "video": "01"],
         
     ]
+    
+    var playViewController = AVPlayerViewController()
+    var playerView = AVPlayer()
+    
     let cellIdentifier = "cell"
 
     override func viewDidLoad() {
@@ -77,6 +81,18 @@ extension LocalVideoVC: UITableViewDataSource{
 }
 extension LocalVideoVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        
+        let d = data[indexPath.row]
+
+        let path = Bundle.main.path(forResource: d["video"], ofType: "mp4")
+        
+        playerView = AVPlayer(url: NSURL(fileURLWithPath: path!) as URL)
+        
+        playViewController.player = playerView
+        
+        self.present(playViewController, animated: true) {
+            self.playViewController.player?.play()
+        }
+        
     }
 }
