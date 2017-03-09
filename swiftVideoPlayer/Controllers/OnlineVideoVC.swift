@@ -64,8 +64,7 @@ class OnlineVideoVC: UIViewController, UIWebViewDelegate {
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
-
-    func webViewDidStartLoad(_ webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         HUD.hide()
     }
 }
