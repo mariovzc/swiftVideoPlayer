@@ -2,8 +2,6 @@
 //  OnlineVideoVC.swift
 //  swiftVideoPlayer
 //
-//  Created by Giancarlo Valencia on 3/8/17.
-//  Copyright © 2017 Saludtec. All rights reserved.
 //
 
 import UIKit
