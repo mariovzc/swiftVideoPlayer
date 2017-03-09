@@ -6,6 +6,6 @@ target 'swiftVideoPlayer' do
   use_frameworks!
 
   # Pods for swiftVideoPlayer
-pod 'YouTubePlayer'
+  pod 'PKHUD', '~> 4.0'
 
 end
