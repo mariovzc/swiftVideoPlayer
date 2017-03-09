@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UEi-fR-rUj"/>
+                    <tabBarItem key="tabBarItem" title="Bla" id="UEi-fR-rUj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hww-mQ-A8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ajj-j2-izW"/>
+                    <tabBarItem key="tabBarItem" title="Youtube" id="ajj-j2-izW"/>
                     <connections>
                         <outlet property="webView" destination="k2d-np-pk1" id="bVr-5A-0AA"/>
                     </connections>
@@ -100,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="S99-Jz-hub"/>
+                    <tabBarItem key="tabBarItem" title="Local" id="S99-Jz-hub"/>
                     <connections>
                         <outlet property="tableView" destination="XJ2-8C-8x9" id="ToP-en-h54"/>
                     </connections>
