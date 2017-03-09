@@ -7,8 +7,10 @@
 import UIKit
 import AVKit
 import AVFoundation
+import PKHUD
 
-class OnlineVideoVC: UIViewController {
+
+class OnlineVideoVC: UIViewController, UIWebViewDelegate {
     //@IBOutlet weak var playerView: YouTubePlayerView!
     @IBOutlet weak var webView: UIWebView!
     
@@ -20,6 +22,9 @@ class OnlineVideoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        HUD.dimsBackground = false
+        HUD.allowsInteraction = false
+        HUD.flash(.labeledProgress(title: "LOADING", subtitle: "WAIT!!!"))
         setVideo()
     }
 
@@ -60,5 +65,7 @@ class OnlineVideoVC: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        HUD.hide()
+    }
 }
