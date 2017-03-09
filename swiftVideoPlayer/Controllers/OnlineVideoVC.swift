@@ -9,7 +9,6 @@
 import UIKit
 import AVKit
 import AVFoundation
-import YouTubePlayer
 
 class OnlineVideoVC: UIViewController {
     //@IBOutlet weak var playerView: YouTubePlayerView!
